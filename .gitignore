@@ -1,0 +1,21 @@
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.vs/
+~$*
+*.bak
+*.tmp
+# Runtime and credentials
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+*.local.json
+# Power BI local state
+.pbi/
+*.pbix.autorecovery
