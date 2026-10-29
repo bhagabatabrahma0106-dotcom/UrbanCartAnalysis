@@ -9,7 +9,7 @@
 
 ## Load
 
-1. Obtain Excel and Power BI binary assets described in [ASSET_MANIFEST.md](ASSET_MANIFEST.md). These are not currently stored in GitHub.
+1. Download the [raw Excel](../data/raw/UrbanCart_Raw_Sales_Data.xlsx), [cleaned Excel](../data/cleaned/UrbanCart_Cleaned_Sales_Data.xlsx) and [uploaded PBIX](../powerbi/UrbanCart_Dashboard.pbix). See the [committed asset manifest](ASSET_MANIFEST.md).
 2. Create database `UrbanCart` in SQL Server. Do not run this workflow against an existing production database.
 3. Import the five cleaned sheets as staging tables with names and columns: `dbo.Customers_Clean`, `dbo.Products_Clean`, `dbo.Orders_Clean`, `dbo.Order_Items_Clean` and `dbo.Return_Clean`.
 4. Check row counts against [data/README.md](../data/README.md) and inspect SQL pre-load checks before running any modifying statements.

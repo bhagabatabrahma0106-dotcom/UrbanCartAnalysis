@@ -1,6 +1,6 @@
 # Power BI report handover
 
-The original `UrbanCart_Dashboard.pbix` is preserved in the companion archive and **has not yet been uploaded to GitHub**.
+The user-uploaded [UrbanCart_Dashboard.pbix](UrbanCart_Dashboard.pbix) is now committed (1,662,323 bytes). It differs from the earlier packaged 4,813,407-byte PBIX. The uploaded version was preserved byte-for-byte; it still needs to be opened, refreshed and reviewed in Power BI Desktop before confirming its visuals and model.
 
 Report structure: 2 pages, `Home` and `Performance`; KPI cards, revenue trend and product/channel/region/segment visuals. Measures from the supplied report are:
 

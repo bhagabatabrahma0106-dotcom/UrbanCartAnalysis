@@ -4,7 +4,7 @@
 
 A portfolio-grade case study using a **synthetic Indian retail dataset** to answer practical questions about sales trends, product performance, customer segments, channels, fulfilment and returns. The project separates source data, transformation logic, business metrics and presentation so that the work is explainable and maintainable.
 
-> **Release status:** The SQL and documentation in this repository are published source artifacts. The original Excel workbooks and Power BI `.pbix` are preserved in the companion project archive, but **have not yet been uploaded to this GitHub repository**. Do not assume the public repository contains or reproduces those binary artifacts until they are added. Offline structure tests were performed; SQL Server execution and Power BI Desktop refresh still require environment-level verification.
+> **Repository status:** All six uploaded Excel, Power BI and reference/document files have been organized into the project folders and are available here. The uploaded Power BI file (1,662,323 bytes) differs from the earlier companion package (4,813,407 bytes) and is preserved as supplied. SQL Server execution and Power BI Desktop refresh still require independent verification.
 
 ## At a glance
 
@@ -54,9 +54,9 @@ erDiagram
 | [sql/01_schema_and_load.sql](sql/01_schema_and_load.sql) | Stage checks, safe duplicate handling, model DDL, load and reconciliation |
 | [sql/02_analysis_and_views.sql](sql/02_analysis_and_views.sql) | Nine reporting views and executable business queries |
 | [sql/03_advanced_analytics.sql](sql/03_advanced_analytics.sql) | Monthly growth, running totals, product ranking, anomaly review |
-| [powerbi/](powerbi/) | DAX reference, model guidance and report handover |
-| [data/](data/) | Input schema, provenance and binary asset instructions |
-| [docs/](docs/) | Setup, architecture, metric definitions and data-quality audit |
+| [powerbi/](powerbi/) | [Power BI report](powerbi/UrbanCart_Dashboard.pbix), DAX reference and report handover |
+| [data/](data/) | [Raw Excel](data/raw/UrbanCart_Raw_Sales_Data.xlsx), [cleaned Excel](data/cleaned/UrbanCart_Cleaned_Sales_Data.xlsx) and dataset notes |
+| [docs/](docs/) | Setup, architecture, [BRD](docs/UrbanCart_Business_Requirement_Document.docx), [walkthrough](docs/UrbanCart_Project_Walkthrough.pptx), [HTML reference](docs/UrbanCart_Dashboard_Reference.html) and quality audit |
 | [scripts/validate_repository.py](scripts/validate_repository.py) | Standard-library source integrity checks |
 | [.github/workflows/validate.yml](.github/workflows/validate.yml) | Automatic validation on pushes and pull requests |
 
@@ -92,11 +92,11 @@ These observations were calculated for the supplied cleaned data after SQL stagi
 
 **Prerequisites:** SQL Server 2017+ for `TRIM`, SSMS or equivalent client, Excel/Power Query, Power BI Desktop and Python 3.11+ for repository checks.
 
-1. Obtain the original workbook assets and verify their SHA-256 values in [docs/ASSET_MANIFEST.md](docs/ASSET_MANIFEST.md).
+1. Download the [raw](data/raw/UrbanCart_Raw_Sales_Data.xlsx) and [cleaned](data/cleaned/UrbanCart_Cleaned_Sales_Data.xlsx) workbooks from this repository and check their identity in [the asset manifest](docs/ASSET_MANIFEST.md).
 2. Inspect the cleaned workbook's five `*_Clean` sheets, then import those sheets to the staging tables described in [docs/SETUP.md](docs/SETUP.md).
 3. Set up a database named `UrbanCart`; review and execute `sql/01_schema_and_load.sql` **in order**. It is intentionally not a blind, repeatable schema migration.
 4. Execute `sql/02_analysis_and_views.sql` and the optional `sql/03_advanced_analytics.sql`.
-5. Open `UrbanCart_Dashboard.pbix` in Power BI Desktop when the companion binary is available; update the SQL Server connection and refresh. Follow [powerbi/README.md](powerbi/README.md).
+5. Open the [uploaded Power BI report](powerbi/UrbanCart_Dashboard.pbix) in Power BI Desktop, update its SQL Server connection, and refresh. Its current contents and runtime behaviour have not been validated. Follow [powerbi/README.md](powerbi/README.md).
 6. Run `python scripts/validate_repository.py` to check the **tracked source package**. This check does not run SQL Server or validate a Power BI refresh.
 
 See [the detailed setup guide](docs/SETUP.md) before executing SQL, especially if using an existing database.

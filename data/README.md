@@ -1,6 +1,6 @@
 # Dataset and provenance
 
-The project uses **synthetic retail data**; it is not a real customer's personal or business dataset. Its original Excel files are included in the companion `UrbanCartAnalysis_GitHub_Ready.zip` package, not currently committed here.
+The project uses **synthetic retail data**; it is not a real customer's personal or business dataset. Both workbooks are now committed: [raw data](raw/UrbanCart_Raw_Sales_Data.xlsx) and [cleaned data](cleaned/UrbanCart_Cleaned_Sales_Data.xlsx).
 
 | Sheet | Raw rows | Cleaned rows | Expected SQL rows |
 |---|---:|---:|---:|
