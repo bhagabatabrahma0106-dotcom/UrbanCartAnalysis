@@ -21,4 +21,4 @@ Revenue must be aggregated at order-line grain; order volume uses distinct order
 
 ## Reproducibility boundary
 
-The Excel/Power BI binaries are separate assets until uploaded to GitHub. SQL uses local SSMS-imported staging tables. This repository contains source, guides and automated static checks, not a deployed cloud service.
+Excel source workbooks, a Power BI report and supporting documents are now committed. SQL uses local SSMS-imported staging tables. The uploaded Power BI version has not been Desktop-refresh validated. This source repository is not a deployed cloud service.

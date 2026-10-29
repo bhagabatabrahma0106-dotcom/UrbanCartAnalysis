@@ -1,3 +1,5 @@
+> **Archived historical review.** The following review describes an earlier project package and includes notes that may now be obsolete (older SQL scripts, report state, original file locations). Refer to the current [README](../../README.md), [asset manifest](../ASSET_MANIFEST.md), and [roadmap](../ROADMAP.md) for the current repository state. This record is retained only as review history.
+
 # Review Notes
 
 Documentation review of the UrbanCart project before publishing to GitHub. Findings are based on inspecting the delivered files themselves (both workbooks, both SQL scripts, the `.pbix` model and report definition), not on the planning documents.

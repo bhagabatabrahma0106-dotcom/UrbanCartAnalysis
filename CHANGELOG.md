@@ -1,11 +1,17 @@
 # Changelog
 
+## 2026-10-29 — Uploaded assets organized
+
+- Moved the raw and cleaned Excel workbooks to `data/raw/` and `data/cleaned/`.
+- Moved the Power BI dashboard to `powerbi/`, and BRD, walkthrough and HTML reference to `docs/`.
+- Archived superseded review notes at `docs/archive/REVIEW_NOTES.md`.
+- Updated README, setup guidance and asset manifest to reference the live files.
+- Documented the difference between the newly uploaded Power BI version and the earlier archive.
+- Expanded automated source checks to guard against absent, empty and unexpectedly changed assets.
+
 ## 2026-10-29 — Repository initialization
 
-- Published a clear, recruiter-facing overview and disclosure of binary asset availability.
-- Organized SQL analysis, metric policies, data quality, and setup guidance.
-- Added continuous integration and non-empty source-file verification.
-- Kept original supplied Excel and Power BI deliverables in the companion downloadable archive pending GitHub binary upload.
-- No claim of production certification or SQL Server/Power BI Desktop runtime verification.
+- Published readable SQL analytics, architecture and metric documentation.
+- Added a data-quality review, setup instructions, and CI validation.
 
-Change entries describe verifiable source changes rather than employment experience.
+These entries document project changes and do not claim SQL Server execution or Power BI Desktop refresh.

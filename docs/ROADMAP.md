@@ -2,7 +2,9 @@
 
 - [x] Organize SQL, reproducibility instructions, data-quality documentation and source tests.
 - [x] Publish a candid, readable project overview.
-- [ ] Upload and checksum-verify the raw/cleaned Excel and `.pbix` binary artifacts.
+- [x] Upload and place the Excel workbooks, Power BI file and supporting documents into appropriate project folders.
+- [x] Match the uploaded Excel workbooks and supporting documents to the companion archive using their Git blob IDs.
+- [ ] Validate the newly uploaded PBIX version and calculate an independent SHA-256 (it differs from the earlier archived version).
 - [ ] Re-run SQL scripts against a clean SQL Server instance and record query/results.
 - [ ] Open and refresh Power BI Desktop report, checking all slicer interactions and KPI reconciliation.
 - [ ] Replace automatic date hierarchies with an explicit date dimension.
